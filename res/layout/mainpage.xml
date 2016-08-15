@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent" android:weightSum="1">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:weightSum="1" android:gravity="bottom|center_vertical|center_horizontal">
 
-    <FrameLayout
+    <ListView
             android:layout_width="match_parent"
-            android:layout_height="401dp">
-        <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chrose pro"
-                android:id="@+id/chosepro" android:layout_gravity="center_horizontal|bottom"/>
-    </FrameLayout>
+            android:layout_height="552dp"
+            android:id="@+id/appList" android:choiceMode="singleChoice"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="59dp">
+    </LinearLayout>
 </LinearLayout>
