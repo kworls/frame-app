@@ -5,12 +5,21 @@
               android:layout_height="fill_parent" android:weightSum="1" android:gravity="bottom|center_vertical|center_horizontal">
 
     <ListView
-            android:layout_width="match_parent"
-            android:layout_height="552dp"
-            android:id="@+id/appList" android:choiceMode="singleChoice"/>
+
+            android:id="@+id/appList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/light_purple"
+            android:listSelector="@color/light_purple" />
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="59dp">
+            android:layout_height="59dp" android:weightSum="1">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pro_confirmed"
+                android:id="@+id/confirm" android:layout_weight="0.97"/>
     </LinearLayout>
 </LinearLayout>

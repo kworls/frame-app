@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:weightSum="1">
 
-    <TextView
-            android:layout_width="109dp"
-            android:layout_height="34dp"
-            android:text="New Text"
-            android:id="@+id/textView" android:layout_gravity="right"/>
-    <ListView
-            android:layout_width="match_parent"
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.05" android:weightSum="1"
+            android:id="@+id/chosedpro">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/imageView" android:layout_weight="1.23" android:maxHeight="100dp"
+                android:maxWidth="100dp"/>
+        <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView" android:choiceMode="singleChoice"/>
+            android:layout_weight="0.92" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="间隔时间"
+                android:id="@+id/textView2" android:layout_weight="0.36"/>
+        <EditText
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13">
+    </LinearLayout>
 </LinearLayout>
